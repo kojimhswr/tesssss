@@ -12,13 +12,13 @@ class AttributeValuesTableSeeder extends Seeder
      */
     public function run()
     {
-        $sizes = ['39', '40', '41', '42', '43'];
+        $rooms = ['Interior', 'Ocean View', 'Suites'];
 
-        foreach ($sizes as $size)
+        foreach ($rooms as $room)
         {
             AttributeValue::create([
                 'attribute_id'      =>  1,
-                'value'             =>  $size,
+                'value'             =>  $room,
                 'price'             =>  null,
             ]);
         }

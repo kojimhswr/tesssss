@@ -14,7 +14,7 @@
                 @else
                 <thead>
                   <tr>
-                    <th>All Products</th>
+                    <th>All Packages</th>
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Total</th>
@@ -25,7 +25,7 @@
                 @foreach(\Cart::getContent() as $item)
                   <tr>
                     <td>
-                        <a class="ps-product__preview" href="#">
+                        <a class="ps-package__preview" href="#">
                             {{-- <img class="mr-15" src="{{ asset('storage/'.$item->images) }}" alt=""> --}}
                             {{ Str::words($item->name,20) }}
                         </a>

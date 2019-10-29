@@ -11,7 +11,7 @@
   <o:PixelsPerInch>96</o:PixelsPerInch>
   </o:OfficeDocumentSettings>
   </xml><![endif]-->
-  <title>Sikil Email</title>
+  <title>Alwis Email</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!--[if !mso]><!-- --><meta content="IE=edge" http-equiv="X-UA-Compatible"><!--<![endif]-->
@@ -43,7 +43,7 @@
         <center bgcolor="#fafbfc" style="width:100%;background-color:#fafbfc;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
           <div id="maincontent" style="max-width:620px; font-size:0;margin:0 auto;">
             <div class="preheader" style="font-size: 1px; line-height:1px; display: none!important; mso-hide:all;">
-              Before shopping with us
+              Before escaping with us
             </div>
             <!--[if gte mso 9]>
               <table border="0" cellpadding="0" cellspacing="0" style="width:620px;">
@@ -83,7 +83,7 @@
                       <td bgcolor="#ffffff">
                         <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
                           <tbody><tr>
-                            <td style="text-align:center; padding:40px 40px 40px 40px; border-top:3px solid #fee600;">
+                            <td style="text-align:center; padding:40px 40px 40px 40px; border-top:3px solid #283C4B;">
                             <!--[if gte mso 9]>
                               <table border="0" cellpadding="0" cellspacing="0" style="width:520px;">
                                 <tr>
@@ -120,7 +120,7 @@
 						<tr>
 							<td bgcolor="#01b3e3" style="padding:0px 10px; text-align:center;" valign="top">
 				<![endif]-->
-					<a href="{{url('user/verify', $user->verifyUser->token)}}" style="background-color:#fee600; border-collapse:separate !important; border-top:10px solid #fee600; border-bottom:10px solid #fee600; border-right:45px solid #fee600; border-left:45px solid #fee600; border-radius:4px; color:#000; display:inline-block; font-family:'Open+Sans','Open Sans',Helvetica, Arial, sans-serif; font-size:13px; font-weight:bold; text-align:center; text-decoration:none; letter-spacing:2px;">VERIFY EMAIL</a>
+					<a href="{{url('user/verify', $user->verifyUser->token)}}" style="background-color:#283C4B; border-collapse:separate !important; border-top:10px solid #283C4B; border-bottom:10px solid #283C4B; border-right:45px solid #283C4B; border-left:45px solid #283C4B; border-radius:4px; color:#000; display:inline-block; font-family:'Open+Sans','Open Sans',Helvetica, Arial, sans-serif; font-size:13px; font-weight:bold; text-align:center; text-decoration:none; letter-spacing:2px;">VERIFY EMAIL</a>
 				<!--[if gte mso 9]>
 							</td>
 						</tr>
@@ -140,7 +140,7 @@
                                   </tr>
                                   <tr>
                                     <td style="font:bold 14px/16px Arial, Helvetica, sans-serif; color:#363636; padding:0 0 7px;">
-                                      The Sikil Team
+                                      Alwis Cruise
                                     </td>
                                   </tr>
                                   
@@ -219,7 +219,7 @@
                     <tbody><tr>
                       <td style="color:#b7bdc1;">
                         
-                        <p style="Margin:0;"><span class="appleLinksGrey">Made by Sikil Team</span> &nbsp;•&nbsp; <span class="appleLinksGrey">Copyright SikilTeam 2019</span></p>
+                        <p style="Margin:0;"><span class="appleLinksGrey">Made by Alwis Team</span> &nbsp;•&nbsp; <span class="appleLinksGrey">Copyright SikilTeam 2019</span></p>
                       </td>
                     </tr>
                   </tbody></table>
@@ -239,8 +239,8 @@
                 <td align="center" bgcolor="#000" style="padding:10px 0;">
                   <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif; font-size:14px; line-height:19px;  text-align:center; width:auto;">
                     <tbody><tr>
-                      <td style="color:#fee600;">
-                        Sikil-mu, Prioritas Kami
+                      <td style="color:#283C4B;">
+                        Alwis Listening, Alwis Understanding
                       </td>
                     </tr>
                   </tbody></table>

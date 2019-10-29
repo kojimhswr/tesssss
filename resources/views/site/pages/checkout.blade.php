@@ -102,10 +102,10 @@
                           <h3>Your Order</h3>
                         </header>
                         <div class="content">
-                          <table class="table ps-checkout__products">
+                          <table class="table ps-checkout__packages">
                             <thead>
                               <tr>
-                                <th class="text-uppercase">Product</th>
+                                <th class="text-uppercase">Package</th>
                                 <th class="text-uppercase">Total</th>
                               </tr>
                             </thead>

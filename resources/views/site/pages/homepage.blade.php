@@ -1,245 +1,949 @@
-  
 @extends('site.app')
 @section('title', 'Homepage')
 @section('content')
-<main class="ps-main">
-    <div class="owl-init slider-main owl-carousel" data-items="1" data-dots="false" data-nav="true">
-        <div class="item-slide">
-            <img src="{{asset('frontend/images/slider/3.jpg')}}">
-        </div>
-        <div class="item-slide rounded">
-            <img src="{{asset('uploads/slider2.png')}}">
-        </div>
-        <div class="item-slide rounded">
-            <img src="{{asset('uploads/slider3.png')}}">
-        </div>
-    </div>
-    <div class="ps-section masonry-root pt-80 pb-40">
-      <div class="ps-container">
-        <div class="ps-section__content pb-50">
-          <div class="masonry-wrapper" data-col-md="3" data-col-sm="2" data-col-xs="1" data-gap="30" data-radio="100%">
-            <div class="ps-masonry">
-              <div class="grid-sizer"></div>
-              <div class="grid-item">
-                <div class="grid-item__content-wrapper"><a class="ps-offer" href="product-detail.html"><img src="frontend/images/offer/nike-just-do-it-1.jpg" alt=""></a></div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item__content-wrapper"><a class="ps-offer" href="product-detail.html"><img src="frontend/images/offer/Microsite-Vans-march.jpg" alt=""></a></div>
-              </div>
-              <div class="grid-item high">
-                <div class="grid-item__content-wrapper"><a class="ps-offer" href="product-detail.html"><img src="frontend/images/offer/email_us_180730-W-NIKE_02.jpg" alt=""></a></div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item__content-wrapper"><a class="ps-offer" href="product-detail.html"><img src="frontend/images/offer/home-2-3.jpg" alt=""></a></div>
-              </div>
-              <div class="grid-item">
-                <div class="grid-item__content-wrapper"><a class="ps-offer" href="product-detail.html"><img src="frontend/images/offer/lot-textile-worn-sneakers-different-sizes-yellow-background_116441-65.jpg" alt=""></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ps-section--features-product ps-section masonry-root pt-40 pb-80">
-      <div class="ps-container">
-        <div class="ps-section__header mb-50">
-          <h3 class="ps-section__title2" data-mask="features">- Featured Products</h3>
-          <ul class="ps-masonry__filter">
-            <li class="current"><a href="#" data-filter="*">All</a></li>
-          </ul>
-        </div>
-        <div class="ps-section__content pb-50">
-          <div class="masonry-wrapper" data-col-md="4" data-col-sm="2" data-col-xs="1" data-gap="30" data-radio="100%">
-            <div class="ps-masonry">
-              <div class="grid-sizer"></div>
-              @foreach ($products as $item)
-                @if ($item->featured == 1)
-              <div class="grid-item kids">
-                <div class="grid-item__content-wrapper">
-                  <div class="ps-shoe mb-30">
-                    <div class="ps-shoe__thumbnail">
-                    @if ($item->images->count() > 0)
-                    
-                      <div class="ps-badge"><span>New</span></div>
-                      <div class="ps-badge ps-badge--sale ps-badge--2nd"><span>Sale</span></div><a class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img src="{{ asset('storage/'.$item->images->first()->full) }}" alt=""><a class="ps-shoe__overlay" href="{{ route('product.show', $item->slug) }}"></a>
-                    
-                    @else
-                    <img src="https://via.placeholder.com/176" alt=""><a class="ps-shoe__overlay" href="#"></a>
-                    @endif
+<h1>TES</h1>
+<div class="qodef-content" style="margin-top: -126px">
+    <div class="qodef-content-inner">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy:400%7CPoppins:600%2C400" rel="stylesheet"
+            property="stylesheet" type="text/css" media="all">
+        <div class="qodef-full-width">
+            <div class="qodef-full-width-inner">
+                    <div class="qodef-slider">
+                            <div class="qodef-slider-inner">
+                <div class="slide-responsive">
+                    <div><img src="{{asset('frontend/upload/1.png')}}" alt=""></div>
+                    <div><img src="{{asset('frontend/upload/2.png')}}" alt=""></div>
+                    <div><img src="{{asset('frontend/upload/3.png')}}" alt=""></div>
+                </div>
+                            </div>
                     </div>
-                    <div class="ps-shoe__content">
-                      <div class="ps-shoe__variants">
-                        @if ($item->images->count() > 0)
-                        <div class="ps-shoe__variant normal">
-                            @foreach($item->images as $image)
-                            <img src="{{ asset('storage/'.$image->full) }}" alt="">
-                            @endforeach
+                <div class="qodef-grid-row">
+                    <div class="qodef-page-content-holder qodef-grid-col-12">
+                       <div class="qodef-row-grid-section-wrapper ">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid qodef-custom-class-fp vc_custom_1540992002315">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="qodef-tours-filter-holder qodef-tours-filter-horizontal">
+     <div class="qodef-tours-search-filters-holder">
+                                            <form action="https://setsail.select-themes.com/tours-search-page/" method="GET">
+                                            <div class="qodef-tours-filters-fields-holder">
+                                            <div class="qodef-tours-filter-field-holder qodef-tours-filter-cole">
+                                            <div class="qodef-tours-input-with-icon">
+                                            <span class="qodef-tours-input-icon">
+                                            <span class="icon_compass"></span>
+                                            </span>
+                                            <input type="text" value="" class="qodef-tours-destination-search" name="destination" placeholder="Where to?">
+                                            </div>
+                                            </div>
+                                            <div class="qodef-tours-filter-field-holder qodef-tours-filter-submit-field-holder qodef-tours-filter-cole">
+                                            <input type="submit" name="setsail_tours_search_submit" value="FIND NOW" class="qodef-btn qodef-btn-medium qodef-btn-solid" data-searching-label="Searching..." /> </div>
+                                            </div>
+                                            </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="qodef-row-grid-section-wrapper qodef-disabled-bg-image-bellow-768 qodef-content-aligment-center"
+                            style="background-color:#f8f8f8;background-image: url(frontend/upload/h1-background-img-2.jpg)">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1539082638899 vc_row-has-fill">
+                                    <div
+                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div
+                                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-10">
+                                                        <div class="vc_column-inner">
+                                                            <div class="wpb_wrapper">
+                                                                <div class="vc_empty_space" style="height: 62px"><span
+                                                                        class="vc_empty_space_inner"></span></div>
+                                                                <div class="qodef-section-title-holder ">
+                                                                    <div class="qodef-st-inner">
+                                                                        <span class="qodef-st-tagline"
+                                                                            style="margin-bottom: -6px">
+                                                                            Choose Your </span>
+                                                                        <h1 class="qodef-st-title">
+                                                                            Destination </h1>
+                                                                        <p class="qodef-st-text"
+                                                                            style="font-size: 17px;line-height: 28px">
+                                                                            Lorem ipsum dolor sit amet, consectetuer
+                                                                            adipiscing elit. Aene an commodo ligula eget
+                                                                            dolor. Aenean massa. Cum sociis </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vc_empty_space" style="height: 62px"><span
+                                                                        class="vc_empty_space_inner"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1539161528309">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                        <div class="vc_column-inner">
+                                                            <div class="wpb_wrapper">
+                                                                <div
+                                                                    class="qodef-tours-destination-holder qodef-destination-standard qodef-grid-list qodef-disable-bottom-space qodef-three-columns qodef-extra-large-space qodef-has-rounded-style qodef-has-overlay-style">
+                                                                    <div class="qodef-td-inner qodef-outer-space">
+                                                                        <div class="qodef-td-item qodef-item-space">
+                                                                            <div class="qodef-tdi-content">
+                                                                                <div class="qodef-tdi-image">
+                                                                                    <img width="650" height="650"
+                                                                                        src="wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg"
+                                                                                        class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                        alt="d"
+                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4.jpg 800w"
+                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
+                                                                                </div>
+                                                                                <a class="qodef-tdi-content-link"
+                                                                                    href="destinations/holland/index.html"></a>
+                                                                                <div class="qodef-tdi-text">
+                                                                                    <div class="qodef-tdi-text-inner">
+                                                                                        <h3 class="qodef-tdi-title">
+                                                                                            Holland</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="qodef-td-item qodef-item-space">
+                                                                            <div class="qodef-tdi-content">
+                                                                                <div class="qodef-tdi-image">
+                                                                                    <img width="650" height="650"
+                                                                                        src="wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg"
+                                                                                        class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                        alt="d"
+                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5.jpg 800w"
+                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
+                                                                                </div>
+                                                                                <a class="qodef-tdi-content-link"
+                                                                                    href="destinations/greece/index.html"></a>
+                                                                                <div class="qodef-tdi-text">
+                                                                                    <div class="qodef-tdi-text-inner">
+                                                                                        <h3 class="qodef-tdi-title">
+                                                                                            Greece</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="qodef-td-item qodef-item-space">
+                                                                            <div class="qodef-tdi-content">
+                                                                                <div class="qodef-tdi-image">
+                                                                                    <img width="650" height="650"
+                                                                                        src="wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg"
+                                                                                        class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                        alt="d"
+                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6.jpg 800w"
+                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
+                                                                                </div>
+                                                                                <a class="qodef-tdi-content-link"
+                                                                                    href="destinations/italy/index.html"></a>
+                                                                                <div class="qodef-tdi-text">
+                                                                                    <div class="qodef-tdi-text-inner">
+                                                                                        <h3 class="qodef-tdi-title">
+                                                                                            Italy</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        @endif
-                        <select class="ps-rating ps-shoe__rating">
-                          <option value="1">1</option>
-                          <option value="1">2</option>
-                          <option value="1">3</option>
-                          <option value="1">4</option>
-                          <option value="2">5</option>
-                        </select>
-                      </div>
-                      <div class="ps-shoe__detail"><a class="ps-shoe__name" href="{{ route('product.show', $item->slug) }}">{{$item->name}}</a>
-                        @if ($item->sale_price > 0)
-                        <span class="ps-shoe__price">
-                          <del>{{ config('settings.currency_symbol').$item->price }}</del> {{ config('settings.currency_symbol').$item->sale_price }}</span>
-                        @else
-                        <span class="ps-shoe__price">{{ config('settings.currency_symbol').$item->sale_price }}</span>
-                        @endif
-                      </div>
+
+
+
+                        <div class="qodef-row-grid-section-wrapper qodef-content-aligment-center">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1540212068471">
+                                    <div
+                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-10">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="qodef-section-title-holder ">
+                                                    <div class="qodef-st-inner">
+                                                        <span class="qodef-st-tagline" style="margin-bottom: -6px">
+                                                            Choose Your </span>
+                                                        <h1 class="qodef-st-title">
+                                                            Perfect Holiday </h1>
+                                                        <p class="qodef-st-text"
+                                                            style="font-size: 17px;line-height: 28px">
+                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                            Aene an commodo ligula eget dolor. Aenean massa. Cum sociis
+                                                            the </p>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space" style="height: 62px"><span
+                                                        class="vc_empty_space_inner"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-row-grid-section-wrapper ">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div
+                                                    class="qodef-tours-dwt-holder qodef-grid-list qodef-disable-bottom-space qodef-one-columns qodef-normal-space">
+                                                    <div class="qodef-td-inner qodef-outer-space">
+                                                        <div class="qodef-td-item qodef-item-space">
+                                                            <div class="qodef-td-item-inner">
+                                                                <div class="qodef-td-items destination">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img width="650" height="650"
+                                                                                src="wp-content/uploads/2018/10/destinations-featured-img-1-650x650.jpg"
+                                                                                class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-1.jpg 800w"
+                                                                                sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        </div>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <div class="qodef-tdi-title">Spain</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="destinations/spain/index.html"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-40-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-40.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/tarragona/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">
+                                                                                        Tarragona</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star-half_alt"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            5.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Good </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$1740</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-41-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-41.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/madrid/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">Madrid
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            7.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Superb </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$1100</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-42-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="f"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-42.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/barcelona/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">
+                                                                                        Barcelona</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star-half_alt"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            5.3 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Good </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$840</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-td-item qodef-item-space">
+                                                            <div class="qodef-td-item-inner">
+                                                                <div class="qodef-td-items destination">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img width="650" height="650"
+                                                                                src="wp-content/uploads/2018/10/destinations-featured-img-2-650x650.jpg"
+                                                                                class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-2.jpg 800w"
+                                                                                sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        </div>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <div class="qodef-tdi-title">Taiwan
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="destinations/taiwan/index.html"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-45-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-45.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/tainan/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">Tainan
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            7.3 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Superb </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$999</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-44-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="d"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-44.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/taipei/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">Taipei
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star-half_alt"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            5.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Good </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$2130</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-43-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-43.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/kaohsiung/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">
+                                                                                        Kaohsiung</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            8.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Superb </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$963</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-td-item qodef-item-space">
+                                                            <div class="qodef-td-item-inner">
+                                                                <div class="qodef-td-items destination">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img width="650" height="650"
+                                                                                src="wp-content/uploads/2018/10/destinations-featured-img-3-650x650.jpg"
+                                                                                class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-3.jpg 800w"
+                                                                                sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        </div>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <div class="qodef-tdi-title">Bali</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="destinations/bali/index.html"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-46-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-46.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/ubud/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">Ubud
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star-half_alt"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            6.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Good </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$888</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-47-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-47.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/seminyak/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">
+                                                                                        Seminyak</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            9.0 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Superb </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$966</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-items tour">
+                                                                    <div class="qodef-tdi-image">
+                                                                        <img width="650" height="650"
+                                                                            src="wp-content/uploads/2018/10/tour-featured-img-48-650x650.jpg"
+                                                                            class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
+                                                                            alt="c"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-1024x1024.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/tour-featured-img-48.jpg 1100w"
+                                                                            sizes="(max-width: 650px) 100vw, 650px" />
+                                                                        <a class="qodef-tdi-link"
+                                                                            href="tour-item/denpasar/index.html"></a>
+                                                                    </div>
+                                                                    <div class="qodef-tdi-content-holder">
+                                                                        <div class="qodef-tdi-content-holder-outer">
+                                                                            <div class="qodef-tdi-content-holder-inner">
+                                                                                <div class="qodef-tdi-title-holder">
+                                                                                    <div class="qodef-tdi-title">
+                                                                                        Denpasar</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="qodef-tdi-rating-and-price-holder">
+                                                                                    <div class="qodef-tdi-rating">
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-icon">
+                                                                                            <span
+                                                                                                class="icon_star-half_alt"></span>
+                                                                                        </span>
+                                                                                        <div
+                                                                                            class="qodef-item-reviews-average-rating">
+                                                                                            6.7 </div>
+                                                                                        <span
+                                                                                            class="qodef-item-reviews-rating-description">
+                                                                                            Good </span>
+                                                                                    </div>
+                                                                                    <div class="qodef-tdi-price-holder">
+                                                                                        <span
+                                                                                            class="qodef-tours-price-holder">
+                                                                                            <span
+                                                                                                class="qodef-tours-item-price ">$999</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1539676941339 qodef-content-aligment-center">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div
+                                            class="qodef-elements-holder   qodef-one-column  qodef-responsive-mode-768 ">
+                                            <div class="qodef-eh-item    " data-item-class="qodef-eh-custom-4401"
+                                                data-680="0 40px">
+                                                <div class="qodef-eh-item-inner">
+                                                    <div class="qodef-eh-item-content qodef-eh-custom-4401">
+                                                        <div
+                                                            class="wpb_single_image wpb_content_element vc_align_center">
+                                                            <figure class="wpb_wrapper vc_figure">
+                                                                <div
+                                                                    class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                    <img width="438" height="133"
+                                                                        src="wp-content/uploads/2018/11/h1-img-1.png"
+                                                                        class="vc_single_image-img attachment-full"
+                                                                        alt=""
+                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/11/h1-img-1.png 438w, https://setsail.select-themes.com/wp-content/uploads/2018/11/h1-img-1-300x91.png 300w"
+                                                                        sizes="(max-width: 438px) 100vw, 438px" /></div>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-row-grid-section-wrapper qodef-parallax-row-holder qodef-content-aligment-center"
+                            data-parallax-bg-image=https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-parallax-img-1.jpg
+                            data-parallax-bg-speed=1 style="background-image: url()">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_row-o-content-bottom vc_row-flex">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                        <div class="vc_column-inner">
+                                                            <div class="wpb_wrapper">
+                                                                <div
+                                                                    class="qodef-elements-holder   qodef-one-column  qodef-responsive-mode-768 ">
+                                                                    <div class="qodef-eh-item    "
+                                                                        data-item-class="qodef-eh-custom-4673"
+                                                                        data-1367-1600="106px 345px 451px"
+                                                                        data-1025-1366="106px 250px 451px"
+                                                                        data-769-1024="106px 80px 339px"
+                                                                        data-681-768="106px 0 260px 0"
+                                                                        data-680="106px 0 117px 0">
+                                                                        <div class="qodef-eh-item-inner">
+                                                                            <div class="qodef-eh-item-content qodef-eh-custom-4673"
+                                                                                style="padding: 106px 345px 451px">
+                                                                                <div
+                                                                                    class="qodef-section-title-holder ">
+                                                                                    <div class="qodef-st-inner">
+                                                                                        <span class="qodef-st-tagline"
+                                                                                            style="color: #ffffff;margin-bottom: -6px">
+                                                                                            Go &amp; Discover </span>
+                                                                                        <h1 class="qodef-st-title"
+                                                                                            style="color: #ffffff">
+                                                                                            Breathtaking Views </h1>
+                                                                                        <p class="qodef-st-text"
+                                                                                            style="color: #ffffff;font-size: 17px;line-height: 28px">
+                                                                                            With our luxurious ships and
+                                                                                            amazing crews </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="vc_empty_space"
+                                                                                    style="height: 42px"><span
+                                                                                        class="vc_empty_space_inner"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-row-grid-section-wrapper qodef-content-aligment-center">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1537885053523">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div
+                                                    class="qodef-elements-holder   qodef-one-column  qodef-responsive-mode-768 ">
+                                                    <div class="qodef-eh-item    "
+                                                        data-item-class="qodef-eh-custom-7494"
+                                                        data-769-1024="113px 0 0 0" data-681-768="191px 0 0 0"
+                                                        data-680="334px 0 0 0">
+                                                        <div class="qodef-eh-item-inner">
+                                                            <div class="qodef-eh-item-content qodef-eh-custom-7494">
+                                                                <div
+                                                                    class="qodef-video-button-holder  qodef-vb-has-img qodef-vb-has-shadow">
+                                                                    <div class="qodef-video-button-image">
+                                                                        <img width="1000" height="480"
+                                                                            src="wp-content/uploads/2018/09/h1-video-button-img.jpg"
+                                                                            class="attachment-full size-full" alt="d"
+                                                                            srcset="https://i.imgur.com/wzDFuiP.png 1000w, https://i.imgur.com/wzDFuiP.png 768w, https://i.imgur.com/wzDFuiP.png 600w"
+                                                                            sizes="(max-width: 1000px) 100vw, 1000px" />
+                                                                    </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-row-grid-section-wrapper ">
+                            <div class="qodef-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1537195066067">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div
+                                                    class="qodef-elements-holder   qodef-four-columns  qodef-responsive-mode-1024 ">
+                                                    <div class="qodef-eh-item   qodef-horizontal-alignment-center "
+                                                        data-item-class="qodef-eh-custom-7564"
+                                                        data-769-1024="0 0 48px 0" data-681-768="0 0 48px 0"
+                                                        data-680="0 45px 48px">
+                                                        <div class="qodef-eh-item-inner">
+                                                            <div class="qodef-eh-item-content qodef-eh-custom-7564"
+                                                                style="padding: 0 45px">
+                                                                <div
+                                                                    class="qodef-iwt clearfix  qodef-iwt-icon-top qodef-iwt-icon-medium">
+                                                                    <div class="qodef-iwt-icon">
+                                                                        <img width="76" height="78"
+                                                                            src="wp-content/uploads/2018/09/h1-custom-icon-img-1.png"
+                                                                            class="attachment-full size-full" alt="a"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-1.png 76w, https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-1-73x75.png 73w"
+                                                                            sizes="(max-width: 76px) 100vw, 76px" />
+                                                                    </div>
+                                                                    <div class="qodef-iwt-content">
+                                                                        <h5 class="qodef-iwt-title"
+                                                                            style="margin-top: -4px">
+                                                                            <span
+                                                                                class="qodef-iwt-title-text">Restaurants</span>
+                                                                        </h5>
+                                                                        <p class="qodef-iwt-text">Aenean commodo ligula
+                                                                            eget dolor. Lorem ipsum</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qodef-eh-item   qodef-horizontal-alignment-center "
+                                                        data-item-class="qodef-eh-custom-7238"
+                                                        data-769-1024="0 0 48px 0" data-681-768="0 0 48px 0"
+                                                        data-680="0 45px 48px">
+                                                        <div class="qodef-eh-item-inner">
+                                                            <div class="qodef-eh-item-content qodef-eh-custom-7238"
+                                                                style="padding: 0 45px">
+                                                                <div
+                                                                    class="qodef-iwt clearfix  qodef-iwt-icon-top qodef-iwt-icon-medium">
+                                                                    <div class="qodef-iwt-icon">
+                                                                        <img width="76" height="78"
+                                                                            src="wp-content/uploads/2018/09/h1-custom-icon-img-2.png"
+                                                                            class="attachment-full size-full" alt="a"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-2.png 76w, https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-2-73x75.png 73w"
+                                                                            sizes="(max-width: 76px) 100vw, 76px" />
+                                                                    </div>
+                                                                    <div class="qodef-iwt-content">
+                                                                        <h5 class="qodef-iwt-title"
+                                                                            style="margin-top: -4px">
+                                                                            <span
+                                                                                class="qodef-iwt-title-text">Sightseeing</span>
+                                                                        </h5>
+                                                                        <p class="qodef-iwt-text">Aenean commodo ligula
+                                                                            eget dolor. Lorem ipsum</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qodef-eh-item   qodef-horizontal-alignment-center "
+                                                        data-item-class="qodef-eh-custom-2398"
+                                                        data-769-1024="0 0 48px 0" data-681-768="0 0 48px 0"
+                                                        data-680="0 45px 48px">
+                                                        <div class="qodef-eh-item-inner">
+                                                            <div class="qodef-eh-item-content qodef-eh-custom-2398"
+                                                                style="padding: 0 45px">
+                                                                <div
+                                                                    class="qodef-iwt clearfix  qodef-iwt-icon-top qodef-iwt-icon-medium">
+                                                                    <div class="qodef-iwt-icon">
+                                                                        <img width="76" height="78"
+                                                                            src="wp-content/uploads/2018/09/h1-custom-icon-img-3.png"
+                                                                            class="attachment-full size-full" alt="a"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-3.png 76w, https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-3-73x75.png 73w"
+                                                                            sizes="(max-width: 76px) 100vw, 76px" />
+                                                                    </div>
+                                                                    <div class="qodef-iwt-content">
+                                                                        <h5 class="qodef-iwt-title"
+                                                                            style="margin-top: -4px">
+                                                                            <span class="qodef-iwt-title-text">Shops
+                                                                                &amp; Boutiques</span>
+                                                                        </h5>
+                                                                        <p class="qodef-iwt-text">Aenean commodo ligula
+                                                                            eget dolor. Lorem ipsum</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qodef-eh-item   qodef-horizontal-alignment-center "
+                                                        data-item-class="qodef-eh-custom-8548">
+                                                        <div class="qodef-eh-item-inner">
+                                                            <div class="qodef-eh-item-content qodef-eh-custom-8548"
+                                                                style="padding: 0 45px">
+                                                                <div
+                                                                    class="qodef-iwt clearfix  qodef-iwt-icon-top qodef-iwt-icon-medium">
+                                                                    <div class="qodef-iwt-icon">
+                                                                        <img width="76" height="78"
+                                                                            src="wp-content/uploads/2018/09/h1-custom-icon-img-4.png"
+                                                                            class="attachment-full size-full" alt="a"
+                                                                            srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-4.png 76w, https://setsail.select-themes.com/wp-content/uploads/2018/09/h1-custom-icon-img-4-73x75.png 73w"
+                                                                            sizes="(max-width: 76px) 100vw, 76px" />
+                                                                    </div>
+                                                                    <div class="qodef-iwt-content">
+                                                                        <h5 class="qodef-iwt-title"
+                                                                            style="margin-top: -4px">
+                                                                            <span class="qodef-iwt-title-text">Where to
+                                                                                Stay</span>
+                                                                        </h5>
+                                                                        <p class="qodef-iwt-text">Aenean commodo ligula
+                                                                            eget dolor. Lorem ipsum</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
                 </div>
-              </div>
-              @endif
-              @endforeach
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    
-  <div class="ps-home-testimonial bg--parallax pb-80" data-background="{{asset('frontend/images/background/parallax.jpg')}}">
-      <div class="container">
-            <div class="ps-section__header mb-50">
-                    <h3 class="ps-section__title1" data-mask="OUR"><span class="ourteam"></span></h3>
-            </div>
-            <div class="ps-section__header mb-50">
-                    <h3 class="ps-section__title2" data-mask="TESTI"><span class="ourteam"></span></h3>
-            </div>
-            <div class="ps-section__header mb-50">
-                <h3 class="ps-section__title" data-mask="MONY"><span class="ourteam"></span></h3>
-        </div>
-        <div class="owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="on" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
-          <div class="ps-testimonial">
-            <div class="ps-testimonial__thumbnail"><img src="{{asset('frontend/images/testimonial/10.png')}}" alt=""><i class="fa fa-quote-left"></i></div>
-            <header>
-              <p>Bu Megawati</p>
-            </header>
-            <footer>
-              <p>“Keren keren sepatu yang dijual di SIKIL, selain keren, pelayanannya juga MANTAP“</p>
-            </footer>
-          </div>
-          <div class="ps-testimonial">
-            <div class="ps-testimonial__thumbnail"><img src="{{asset('frontend/images/testimonial/4.png')}}" alt=""><i class="fa fa-quote-left"></i></div>
-            <header>
-              <p>Danila Riyadi</p>
-            </header>
-            <footer>
-              <p>“SIKIL MANIA MANTAP“</p>
-            </footer>
-          </div>
-          <div class="ps-testimonial">
-            <div class="ps-testimonial__thumbnail"><img src="{{asset('frontend/images/testimonial/9.png')}}" alt=""><i class="fa fa-quote-left"></i></div>
-            <header>
-              <p>Mpok Jum</p>
-            </header>
-            <footer>
-              <p>“Pokoknye mpok demen bener dah 'patu dari siniin, kage ade dah pokoknye di tempat lain“</p>
-            </footer>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ps-features pt-80 pb-80">
-      <div class="ps-container">
-        <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-                <div class="ps-iconbox">
-                  <div class="ps-iconbox__header"><i class="ps-icon-delivery"></i>
-                    <h3>Free shipping</h3>
-                    <p>ON ORDER OVER $199</p>
-                  </div>
-                  <div class="ps-iconbox__content">
-                    <p>Want to track a package? Find tracking information and order details from Your Orders.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-                <div class="ps-iconbox">
-                  <div class="ps-iconbox__header"><i class="ps-icon-money"></i>
-                    <h3>100% MONEY BACK.</h3>
-                    <p>WITHIN 30 DAYS AFTER DELIVERY.</p>
-                  </div>
-                  <div class="ps-iconbox__content">
-                    <p>You may return most new, unopened items sold within 30 days of delivery for a full refund.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-                <div class="ps-iconbox">
-                  <div class="ps-iconbox__header"><i class="ps-icon-customer-service"></i>
-                    <h3>SUPPORT 24/7.</h3>
-                    <p>WE CAN HELP YOU ONLINE.</p>
-                  </div>
-                  <div class="ps-iconbox__content">
-                    <p>We offer a 24/7 customer hotline so you’re never alone if you have a question.</p>
-                  </div>
-                </div>
-              </div>
-        </div>
-      </div>
-    </div>
-    <div class="ps-home-partner">
-      <div class="ps-container">
-        <div class="owl-slider itemputih" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="40" data-owl-nav="false" data-owl-dots="false" data-owl-item="6" data-owl-item-xs="2" data-owl-item-sm="4" data-owl-item-md="5" data-owl-item-lg="6" data-owl-duration="1000" data-owl-mousedrag="on"><a href="#"><img src="{{asset('frontend/images/slider/1.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/2.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/4.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/5.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/6.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/7.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/8.png')}}" alt=""></a><a href="#"><img src="{{asset('frontend/images/slider/9.png')}}" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="{{ asset('frontend/js/main.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/js/main.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/jquery-bar-rating/dist/jquery.barrating.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/owl-carousel/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/gmap3.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/imagesloaded.pkgd.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/jquery.matchHeight-min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/slick/slick/slick.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/elevatezoom/jquery.elevatezoom.js') }}"></script>
-  
-  <script src="{{ asset('frontend/plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
-  <script src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyA-XBs8xkUbYA0ykeWNnxWRP8SMOSQHFW8&amp;region=GB') }}"></script>
-  <script src="{{ asset('frontend/plugins/revolution/js/jquery.themepunch.tools.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('frontend/plugins/slick/slick/slick.min.js') }}"></script>
-  <script src="{{ asset('frontend/plugins/elevatezoom/jquery.elevatezoom.js') }}"></script>
-  <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    rewind:true,
-    center:true,
-    autoplay:true,
-    margin:10,
-    dots:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-            autoplay:true,
-            dots:true
-        },
-        600:{
-            items:1,
-            autoplay:true,
-            nav:false,
-            dots:true
-        },
-        1000:{
-            items:1,
-            autoplay:true,
-            nav:false,
-            loop:true,
-        }
-    }
-})</script>
-  @stop
+</div>
+</div>
+@stop

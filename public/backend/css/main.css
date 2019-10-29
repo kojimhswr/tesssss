@@ -14,7 +14,6 @@
  */
 
 :root {
-  --kuningsikil: #ffe600;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -1925,7 +1924,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #FFF;
-  border-color: var(--kuningsikil);
+  border-color: #009688;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2414,15 +2413,15 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: rgb(0, 0, 0);
-  background-color: var(--kuningsikil);
-  border-color: var(--kuningsikil);
+  color: #FFF;
+  background-color: #1e6880;
+  border-color: #1e6880;
 }
 
 .btn-primary:hover {
   color: #FFF;
-  background-color: rgb(0, 0, 0);
-  border-color: #000000;
+  background-color: #174f61;
+  border-color: #174f61;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3967,7 +3966,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   justify-content: space-between;
 }
 
-.navbar-ship {
+.navbar-brand {
   display: inline-block;
   padding-top: 0.3359375rem;
   padding-bottom: 0.3359375rem;
@@ -3977,7 +3976,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   white-space: nowrap;
 }
 
-.navbar-ship:hover, .navbar-ship:focus {
+.navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
 
@@ -4280,11 +4279,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   display: none;
 }
 
-.navbar-light .navbar-ship {
+.navbar-light .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-light .navbar-ship:hover, .navbar-light .navbar-ship:focus {
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -4325,11 +4324,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-dark .navbar-ship {
+.navbar-dark .navbar-brand {
   color: #FFF;
 }
 
-.navbar-dark .navbar-ship:hover, .navbar-dark .navbar-ship:focus {
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #FFF;
 }
 
@@ -4730,9 +4729,9 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .page-item.active .page-link {
   z-index: 1;
-  color: #000000;
-  background-color: var(--kuningsikil);
-  border-color: var(--kuningsikil);
+  color: #FFF;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .page-item.disabled .page-link {
@@ -9741,7 +9740,7 @@ body.stop-scrolling {
   overflow: hidden;
   padding: 0 10px;
   max-height: 0;
-  -webkit-transition: padding 0.15s, max-height 0.15s;
+  webkit-transition: padding 0.15s, max-height 0.15s;
   -webkit-transition: padding 0.15s, max-height 0.15s;
   -o-transition: padding 0.15s, max-height 0.15s;
   transition: padding 0.15s, max-height 0.15s;
@@ -9750,7 +9749,7 @@ body.stop-scrolling {
 .sweet-alert .sa-error-container.show {
   padding: 10px 0;
   max-height: 100px;
-  -webkit-transition: padding 0.2s, max-height 0.2s;
+  webkit-transition: padding 0.2s, max-height 0.2s;
   -webkit-transition: padding 0.25s, max-height 0.25s;
   -o-transition: padding 0.25s, max-height 0.25s;
   transition: padding 0.25s, max-height 0.25s;
@@ -12583,7 +12582,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffe600;
+  background-color: #faf8f8f8;
   z-index: 1030;
   padding-right: 15px;
 }
@@ -12620,7 +12619,7 @@ be a descendant of the grid when it is being dragged.
     flex: 0 0 auto;
     display: block;
     width: 230px;
-    background-color: #ffe600;
+    background-color: #faf8f8f8;
   }
 }
 
@@ -12632,7 +12631,7 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle {
   padding: 0 15px;
   font-family: fontAwesome;
-  color: rgb(0, 0, 0);
+  color: #1e6880;
   line-height: 2.4;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -12653,8 +12652,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
-  color: #fff;
-  background-color: #000000;
+  color: #033B4D;
   text-decoration: none;
 }
 
@@ -12680,15 +12678,14 @@ be a descendant of the grid when it is being dragged.
   display: block;
   padding: 15px;
   line-height: 20px;
-  color: rgb(0, 0, 0);
+  color: #1e6880;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 .app-nav__item:hover, .app-nav__item:focus {
-  background: rgba(0, 0, 0, 0.1);
-  color: #f6f6f6;
+  color: #033B4D;
 }
 
 .app-search {
@@ -12905,7 +12902,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
   background: #0d1214;
-  border-left-color: var(--kuningsikil);
+  border-left-color: #5992A5;
   text-decoration: none;
   color: #fff;
 }
@@ -13111,7 +13108,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  background-color: #FFF;
+  background-color: #105166;
   margin: -30px -30px 30px;
   padding: 20px 30px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -13142,6 +13139,7 @@ be a descendant of the grid when it is being dragged.
   margin: 0;
   font-size: 24px;
   font-weight: 400;
+  color: #fff;
 }
 
 .app-title p {
@@ -13529,18 +13527,20 @@ be a descendant of the grid when it is being dragged.
 
 .material-half-bg {
   height: 100vh;
-  background-color: #000;
   position: fixed;
+  background-image: url("bglogin.png");
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+  opacity: 0.8;
 }
 
 .material-half-bg .cover {
-  background-color: var(--kuningsikil);
+  background-color: #faf8f8f8;
   height: 50vh;
+  opacity: 1;
 }
 
 .m-loader {
@@ -13898,7 +13898,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .login-content .logo {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-family: "Niconne";
   color: #fff;
 }

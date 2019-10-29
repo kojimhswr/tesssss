@@ -19,18 +19,15 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 
 Route::view('/about-us', 'site.pages.aboutus');
 
-
-Route::view('/homepage', 'site.pages.homepage');
-
 Route::view('/checkout', 'site.pages.checkout');
 
-Route::view('/', 'site.partials.header2');
+Route::view('/', 'site.pages.homepage');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 
 Route::get('/region/{slug}', 'Site\RegionController@show')->name('region.show');
-Route::get('/products/{slug}', 'Site\ProductController@show')->name('product.show');
-Route::post('/product/add/cart', 'Site\ProductController@addToCart')->name('product.add.cart');
+Route::get('/packages/{slug}', 'Site\PackageController@show')->name('package.show');
+Route::post('/package/add/cart', 'Site\PackageController@addToCart')->name('package.add.cart');
 
 
 //cart

@@ -52,23 +52,25 @@ Route::group(['prefix'  =>  'admin'], function () {
 
         });
 
-        Route::group(['prefix' => 'products'], function () {
+        Route::group(['prefix' => 'packages'], function () {
 
-           Route::get('/', 'Admin\ProductController@index')->name('admin.products.index');
-           Route::get('/create', 'Admin\ProductController@create')->name('admin.products.create');
-           Route::post('/store', 'Admin\ProductController@store')->name('admin.products.store');
-           Route::get('/edit/{id}', 'Admin\ProductController@edit')->name('admin.products.edit');
-           Route::post('/update', 'Admin\ProductController@update')->name('admin.products.update');
-           Route::get('/{id}/delete', 'Admin\ProductController@delete')->name('admin.products.delete');
+           Route::get('/', 'Admin\PackageController@index')->name('admin.packages.index');
+           Route::get('/create', 'Admin\PackageController@create')->name('admin.packages.create');
+           Route::post('/store', 'Admin\PackageController@store')->name('admin.packages.store');
+           Route::get('/edit/{id}', 'Admin\PackageController@edit')->name('admin.packages.edit');
+           Route::post('/update', 'Admin\PackageController@update')->name('admin.packages.update');
+           Route::get('/{id}/delete', 'Admin\PackageController@delete')->name('admin.packages.delete');
+           Route::get('/itinerary', 'Admin\PackageController@one_way');
 
-           Route::post('images/upload', 'Admin\ProductImageController@upload')->name('admin.products.images.upload');
-           Route::get('images/{id}/delete', 'Admin\ProductImageController@delete')->name('admin.products.images.delete');
 
-           Route::get('attributes/load', 'Admin\ProductAttributeController@loadAttributes');
-           Route::post('attributes', 'Admin\ProductAttributeController@productAttributes');
-           Route::post('attributes/values', 'Admin\ProductAttributeController@loadValues');
-           Route::post('attributes/add', 'Admin\ProductAttributeController@addAttribute');
-           Route::post('attributes/delete', 'Admin\ProductAttributeController@deleteAttribute');
+           Route::post('images/upload', 'Admin\PackageImageController@upload')->name('admin.packages.images.upload');
+           Route::get('images/{id}/delete', 'Admin\PackageImageController@delete')->name('admin.packages.images.delete');
+
+           Route::get('attributes/load', 'Admin\PackageAttributeController@loadAttributes');
+           Route::post('attributes', 'Admin\PackageAttributeController@packageAttributes');
+           Route::post('attributes/values', 'Admin\PackageAttributeController@loadValues');
+           Route::post('attributes/add', 'Admin\PackageAttributeController@addAttribute');
+           Route::post('attributes/delete', 'Admin\PackageAttributeController@deleteAttribute');
 
         });
 

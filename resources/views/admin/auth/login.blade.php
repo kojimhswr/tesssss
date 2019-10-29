@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/css/main.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/css/font-awesome/4.7.0/css/font-awesome.min.css') }}"/>
-    <title>Login - {{ config('app.name') }}</title>
+    <title>Login | Alwis Cruise &#9400;</title>
 </head>
 <body>
 <section class="material-half-bg">
@@ -14,9 +14,8 @@
 </section>
 <section class="login-content">
     <div class="logo">
-        <img src="{{asset('uploads/logosikil.jpg')}}" alt="logo" height="150px" width="150px">
+    <h1><img src="{{asset('backend/upload/logogede.png')}}" width="200px"></h1>
     </div>
-    <h3>Sikil Team Login Dashboard</h3>
     <div class="login-box">
         <form class="login-form" action="{{ route('admin.login.post') }}" method="POST" role="form">
             @csrf

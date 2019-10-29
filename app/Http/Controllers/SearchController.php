@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
+use App\Models\Package;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller{
@@ -15,9 +15,9 @@ class SearchController extends Controller{
 
     $query = $request->input('query');
 
-    $products = Product::where('name', 'like', "%$query%")->paginate(10);
+    $packages = Package::where('name', 'like', "%$query%")->paginate(10);
 
-    return view('site.pages.search-result')->with('products', $products);
+    return view('site.pages.search-result')->with('packages', $packages);
 
   }
 }

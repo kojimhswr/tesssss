@@ -1,5 +1,5 @@
 <header class="app-header">
-    <a class="app-header__logo" href="#"><img src="{{asset('uploads/logosikil.jpg')}}" alt="logo" height="50px" width="50px"></a>
+    <a class="app-header__logo" href="#"><img src="{{asset('backend/upload/logobaris.png')}}" alt="logo" ></a>
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <ul class="app-nav">
         <li class="app-search">

@@ -3,7 +3,7 @@
     <ul class="app-menu">
         <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
-                <i class="app-menu__icon fa fa-dashboard"></i>
+                <i class="app-menu__icon fas fa-tachometer-alt"></i>
                 <span class="app-menu__label">Dashboard</span>
             </a>
         </li>
@@ -14,27 +14,27 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.products.index' ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
-                <i class="app-menu__icon fa fa-shopping-bag"></i>
-                <span class="app-menu__label">Products</span>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.packages.index' ? 'active' : '' }}" href="{{ route('admin.packages.index') }}">
+                <i class="app-menu__icon fas fa-suitcase-rolling"></i>
+                <span class="app-menu__label">Packages</span>
             </a>
         </li>
         <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.ships.index' ? 'active' : '' }}" href="{{ route('admin.ships.index') }}">
-                <i class="app-menu__icon fa fa-briefcase"></i>
+                <i class="app-menu__icon fas fa-ship"></i>
                 <span class="app-menu__label">Ships</span>
             </a>
         </li>
         <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.regions.index' ? 'active' : '' }}" href="{{ route('admin.regions.index') }}">
-                <i class="app-menu__icon fa fa-tags"></i>
+                <i class="app-menu__icon fas fa-globe-europe"></i>
                 <span class="app-menu__label">Regions</span>
             </a>
         </li>
         <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.attributes.index' ? 'active' : '' }}" href="{{ route('admin.attributes.index') }}">
-                <i class="app-menu__icon fa fa-th"></i>
-                <span class="app-menu__label">Attributes</span>
+                <i class="app-menu__icon fas fa-concierge-bell"></i>
+                <span class="app-menu__label">Package Options</span>
             </a>
         </li>
         <li>

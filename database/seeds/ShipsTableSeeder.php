@@ -13,19 +13,19 @@ class ShipsTableSeeder extends Seeder
     public function run()
     {
         Ship::create([
-            'name'          =>  'Adidas',
+            'name'          =>  'Wonder of Alwi',
         ]);
 
         Ship::create([
-            'name'          =>  'Vans',
+            'name'          =>  'Odyssey of Alwi',
         ]);
 
         Ship::create([
-            'name'          =>  'Nike',
+            'name'          =>  'Symphony of Alwi',
         ]);
 
         Ship::create([
-            'name'          =>  'Puma',
+            'name'          =>  'Harmony of Alwi',
         ]);
     }
 }

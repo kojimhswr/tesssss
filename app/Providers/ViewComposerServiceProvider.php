@@ -5,8 +5,8 @@ namespace App\Providers;
 use Cart;
 
 use App\Models\Region;
-use App\Models\Product;
-use App\Models\ProductImage;
+use App\Models\Package;
+use App\Models\PackageImage;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -32,7 +32,7 @@ class ViewComposerServiceProvider extends ServiceProvider
         });
 
         View::composer('site.pages.homepage', function ($view) {
-            $view->with('products', Product::orderByRaw('-name ASC')->get());
+            $view->with('packages', Package::orderByRaw('-name ASC')->get());
         });
     }
 

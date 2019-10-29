@@ -2,13 +2,13 @@
 @section('title', $region->name)
 @section('content')
 <main class="ps-main">
-        <div class="ps-products-wrap pt-80 pb-80">
-          <div class="ps-products" data-mh="product-listing">
+        <div class="ps-packages-wrap pt-80 pb-80">
+          <div class="ps-packages" data-mh="package-listing">
             <div class="ps-section--offer mb-40">
-              <div class="ps-column"><a class="ps-offer" href="product-listing.html"><img src="{{asset('frontend/images/banner/banner-1.jpg')}}" alt=""></a></div>
-              <div class="ps-column"><a class="ps-offer" href="product-listing.html"><img src="{{asset('frontend/images/banner/banner-2.jpg')}}" alt=""></a></div>
+              <div class="ps-column"><a class="ps-offer" href="package-listing.html"><img src="{{asset('frontend/images/banner/banner-1.jpg')}}" alt=""></a></div>
+              <div class="ps-column"><a class="ps-offer" href="package-listing.html"><img src="{{asset('frontend/images/banner/banner-2.jpg')}}" alt=""></a></div>
             </div>
-            <div class="ps-product-action">
+            <div class="ps-package-action">
               <div class="ps-pagination">
                 <ul class="pagination">
                   <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
@@ -20,30 +20,30 @@
                 </ul>
               </div>
             </div>
-            <div class="ps-product__columns">
-            @forelse($region->products as $product)
-              <div class="ps-product__column">
+            <div class="ps-package__columns">
+            @forelse($region->packages as $package)
+              <div class="ps-package__column">
                 <div class="ps-shoe mb-30">
-                  @if ($product->images->count() > 0)
+                  @if ($package->images->count() > 0)
                   <div class="ps-shoe__thumbnail">
-                    <img src="{{ asset('storage/'.$product->images->first()->full) }}" alt=""><a class="ps-shoe__overlay" href="{{ route('product.show', $product->slug) }}"></a>
+                    <img src="{{ asset('storage/'.$package->images->first()->full) }}" alt=""><a class="ps-shoe__overlay" href="{{ route('package.show', $package->slug) }}"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
-                    @if ($product->images->count() > 0)
+                    @if ($package->images->count() > 0)
                         <div class="ps-shoe__variant normal">
-                            @foreach($product->images as $image)
+                            @foreach($package->images as $image)
                             <img src="{{ asset('storage/'.$image->full) }}" alt="">
                             @endforeach
                         </div>
                     @endif
                     @else
                     <div class="ps-shoe__thumbnail">
-                      <img src="https://via.placeholder.com/176" alt=""><a class="ps-shoe__overlay" href="{{ route('product.show', $product->slug) }}"></a>
+                      <img src="https://via.placeholder.com/176" alt=""><a class="ps-shoe__overlay" href="{{ route('package.show', $package->slug) }}"></a>
                     </div>
                     <div class="ps-shoe__content">
                         <div class="ps-shoe__variants">
-                        @if ($product->images->count() > 0)
+                        @if ($package->images->count() > 0)
                             <div class="ps-shoe__variant normal">
                                 <img src="https://via.placeholder.com/176" alt="">
                                 <img src="https://via.placeholder.com/176" alt="">
@@ -59,19 +59,19 @@
                         <option value="2">5</option>
                       </select>
                     </div>
-                    <div class="ps-shoe__detail"><a class="ps-shoe__name" href="{{ route('product.show', $product->slug) }}">{{$product->name}}</a>
-                        @if ($product->sale_price > 0)
+                    <div class="ps-shoe__detail"><a class="ps-shoe__name" href="{{ route('package.show', $package->slug) }}">{{$package->name}}</a>
+                        @if ($package->sale_price > 0)
                         <span class="ps-shoe__price">
-                          <del>{{ config('settings.currency_symbol').$product->price }}</del> {{ config('settings.currency_symbol').$product->sale_price }}</span>
+                          <del>{{ config('settings.currency_symbol').$package->price }}</del> {{ config('settings.currency_symbol').$package->sale_price }}</span>
                         @else
-                        <span class="ps-shoe__price">{{ config('settings.currency_symbol').$product->price }}</span>
+                        <span class="ps-shoe__price">{{ config('settings.currency_symbol').$package->price }}</span>
                         @endif
                     </div>
                   </div>
                 </div>
               </div>
               @empty
-              <h3>No Products found in {{ $region->name }}.</h3> 
+              <h3>No Packages found in {{ $region->name }}.</h3> 
               @endforelse
             </div>
            
@@ -86,7 +86,7 @@
               </ul>
             </div>
           </div>
-          <div class="ps-sidebar" data-mh="product-listing">
+          <div class="ps-sidebar" data-mh="package-listing">
             <aside class="ps-widget--sidebar ps-widget--region">
               <div class="ps-widget__header">
                 <h3>Region</h3>
@@ -95,7 +95,7 @@
                 <ul class="ps-list--checked">
                 @foreach($regions as $cate)
                 @foreach($cate->items as $regions)
-                  <li><a href="{{ route('region.show', $regions->slug) }}" id="{{ $regions->slug }}">{{ $regions->name }}({{$regions->products->count()}})</a></li>
+                  <li><a href="{{ route('region.show', $regions->slug) }}" id="{{ $regions->slug }}">{{ $regions->name }}({{$regions->packages->count()}})</a></li>
                   @endforeach
                   @endforeach
                 </ul>
@@ -105,7 +105,7 @@
             <!--aside.ps-widget--sidebar-->
             <!--    .ps-widget__header: h3 Ads Banner-->
             <!--    .ps-widget__content-->
-            <!--        a(href='product-listing'): img(src="images/offer/sidebar.jpg" alt="")-->
+            <!--        a(href='package-listing'): img(src="images/offer/sidebar.jpg" alt="")-->
             <!---->
             <!--aside.ps-widget--sidebar-->
             <!--    .ps-widget__header: h3 Best Seller-->

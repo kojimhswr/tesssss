@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\Product;
+use App\Models\Package;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use TypiCMS\NestableTrait;
@@ -60,8 +60,8 @@ class Region extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function products()
+    public function packages()
     {
-        return $this->belongsToMany(Product::class, 'product_regions', 'region_id', 'product_id');
+        return $this->belongsToMany(Package::class, 'package_regions', 'region_id', 'package_id');
     }
 }

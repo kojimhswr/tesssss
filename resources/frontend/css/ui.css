@@ -1902,40 +1902,40 @@ ul.row, ul.row-sm {
     left: 0;
     font-size: 13px; }
 
-.card-product {
+.card-package {
   margin-bottom: 1rem;
   /* btn-overlay-bottom */ }
-  .card-product:after {
+  .card-package:after {
     content: "";
     display: table;
     clear: both;
     visibility: hidden; }
-  .card-product .img-wrap {
+  .card-package .img-wrap {
     border-radius: 0.2rem 0.2rem 0 0;
     overflow: hidden;
     position: relative;
     height: 220px;
     text-align: center; }
-    .card-product .img-wrap img {
+    .card-package .img-wrap img {
       max-height: 100%;
       max-width: 100%;
       width: auto;
       display: inline-block;
       -o-object-fit: cover;
          object-fit: cover; }
-  .card-product .info-wrap {
+  .card-package .info-wrap {
     overflow: hidden;
     padding: 15px;
     border-top: 1px solid #eee; }
-  .card-product .action-wrap {
+  .card-package .action-wrap {
     padding-top: 4px;
     margin-top: 4px; }
-  .card-product .bottom-wrap {
+  .card-package .bottom-wrap {
     padding: 15px;
     border-top: 1px solid #eee; }
-  .card-product .title {
+  .card-package .title {
     margin-top: 0; }
-  .card-product .btn-overlay {
+  .card-package .btn-overlay {
     -webkit-transition: .5s;
     transition: .5s;
     opacity: 0;
@@ -1949,9 +1949,9 @@ ul.row, ul.row-sm {
     position: absolute;
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.5); }
-  .card-product:hover .btn-overlay {
+  .card-package:hover .btn-overlay {
     opacity: 1; }
-  .card-product:hover {
+  .card-package:hover {
     -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
             box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
     -webkit-transition: .5s;

@@ -11,8 +11,8 @@ use App\Contracts\AttributeContract;
 use App\Repositories\AttributeRepository;
 use App\Contracts\ShipContract;
 use App\Repositories\ShipRepository;
-use App\Contracts\ProductContract;
-use App\Repositories\ProductRepository;
+use App\Contracts\PackageContract;
+use App\Repositories\PackageRepository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
@@ -20,7 +20,7 @@ class RepositoryServiceProvider extends ServiceProvider
         RegionContract::class         =>          RegionRepository::class,
         AttributeContract::class        =>          AttributeRepository::class,
         ShipContract::class            =>          ShipRepository::class,
-        ProductContract::class          =>          ProductRepository::class,
+        PackageContract::class          =>          PackageRepository::class,
         OrderContract::class            =>          OrderRepository::class,
     ];
     /**

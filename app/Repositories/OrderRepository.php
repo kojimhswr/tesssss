@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use Cart;
 use App\Models\Order;
-use App\Models\Product;
+use App\Models\Package;
 use App\Models\OrderItem;
 use App\Contracts\OrderContract;
 
@@ -42,12 +42,12 @@ class OrderRepository extends BaseRepository implements OrderContract
 
             foreach ($items as $item)
             {
-                // A better way will be to bring the product id with the cart items
-                // you can explore the package documentation to send product id with the cart
-                $product = Product::where('name', $item->name)->first();
+                // A better way will be to bring the package id with the cart items
+                // you can explore the package documentation to send package id with the cart
+                $package = Package::where('name', $item->name)->first();
 
                 $orderItem = new OrderItem([
-                    'product_id'    =>  $product->id,
+                    'package_id'    =>  $package->id,
                     'quantity'      =>  $item->quantity,
                     'price'         =>  $item->getPriceSum()
                 ]);

@@ -9,11 +9,11 @@ class OrderItem extends Model
     protected $table = 'order_items';
 
     protected $fillable = [
-        'order_id', 'product_id', 'quantity', 'price'
+        'order_id', 'package_id', 'quantity', 'price'
     ];
 
-    public function product()
+    public function package()
     {
-        return $this->belongsTo(Product::class, 'product_id');
+        return $this->belongsTo(Package::class, 'package_id');
     }
 }

@@ -1879,7 +1879,7 @@ readers do not read off random characters that represent icons */
 .fa-print:before {
   content: "\f02f"; }
 
-.fa-product-hunt:before {
+.fa-package-hunt:before {
   content: "\f288"; }
 
 .fa-pushed:before {

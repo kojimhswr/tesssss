@@ -21,21 +21,21 @@ class RegionsTableSeeder extends Seeder
 
         Region::create([
             'name'          =>  'Asia',
-            'description'   =>  'Men Shoes',    
+            'description'   =>  'Asia Region',    
             'parent_id'     =>  1,
             'menu'          =>  1,
         ]);
 
         Region::create([
             'name'          =>  'Europe',
-            'description'   =>  'Women Shoes',
+            'description'   =>  'Europe Region',
             'parent_id'     =>  1,
             'menu'          =>  1,
         ]);
 
         Region::create([
             'name'          =>  'America',
-            'description'   =>  'Kids Shoes',
+            'description'   =>  'America Region',
             'parent_id'     =>  1,
             'menu'          =>  1,
         ]);

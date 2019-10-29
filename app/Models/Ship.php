@@ -29,8 +29,8 @@ class Ship extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function products()
+    public function packages()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Package::class);
     }
 }

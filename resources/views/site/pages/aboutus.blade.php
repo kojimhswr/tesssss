@@ -1,274 +1,118 @@
 @extends('site.app')
 @section('title', 'About Us')
 @section('content')
-<!-- Bootstrap CSS -->
-<link href="{{asset('frontend/css/about-us/bootstrap.min.css')}}" rel="stylesheet">
+<style id='setsail-select-woo-inline-css' type='text/css'>
+    .page-id-469 .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner, .page-id-469 .qodef-content .qodef-content-inner > .qodef-full-width > .qodef-full-width-inner { padding: 0px;}.page-id-469 .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner, .page-id-469 .qodef-content .qodef-content-inner > .qodef-full-width > .qodef-full-width-inner { padding: 0px;}
+    </style>
 
-<!-- FontAwesome CSS -->
-<link href="{{asset('frontend/css/about-us/font-awesome.min.css')}}" rel="stylesheet">
-
-<!-- Ionicons CSS -->
-<link href="{{asset('frontend/css/about-us/ionicons.min.css')}}" rel="stylesheet">
-
-<!-- Themify CSS -->
-<link href="{{asset('frontend/css/about-us/themify-icons.css')}}" rel="stylesheet">
-
-<!-- Plugins CSS -->
-<link href="{{asset('frontend/css/about-us/plugins.css')}}" rel="stylesheet">
-
-<!-- Helper CSS -->
-<link href="{{asset('frontend/css/about-us/helper.css')}}" rel="stylesheet">
-
-<!-- Main CSS -->
-<link href="{{asset('frontend/css/about-us/main.css')}}" rel="stylesheet">
-
-<!-- Modernizer JS -->
-<script src="{{asset('frontend/css/about-us/vendor/modernizr-2.8.3.min.js')}}"></script>
-<br>
-<br>
-<br>
-<div class="section-title-container mb-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <!--=======  section title  =======-->
-                
-                <div class="section-title section-title--one text-center">
-                    
-                    <span class="brushstroke"><h1>Sikil Team</h1></span>
-                    <p class="subtitle subtitle--deep mb-0">Sikil-mu, Prioritas Kami</p>
-                </div>
-                
-                <!--=======  End of section title  =======-->
-            </div>
-        </div>
+<style id='js_composer_front-inline-css' type='text/css'>
+    .vc_custom_1539260876012{padding-bottom: 126px !important;}.vc_custom_1540812231889{padding-top: 10px !important;padding-right: 30px !important;padding-bottom: 100px !important;padding-left: 30px !important;}.vc_custom_1539172735011{padding-bottom: 124px !important;}.vc_custom_1536678050107{padding-top: 40px !important;padding-bottom: 40px !important;}
+    </style>
+<div class="qodef-content">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy:400%7CPoppins:600%2C400" rel="stylesheet"
+        property="stylesheet" type="text/css" media="all">
+    <div class="qodef-content-inner">
+    <div class="qodef-title-holder qodef-centered-type qodef-title-va-header-bottom qodef-preload-background qodef-has-bg-image qodef-bg-parallax" style="height: 520px;background-color: #f8f8f8;background-image:url(frontend/upload/about-us-title-img-1.jpg);" data-height="520">
+    <div class="qodef-title-image">
+    <img itemprop="image" src="{{asset('frontend/upload/about-us-title-img-1.jpg')}}" alt="s" />
     </div>
-</div>
-
-<div class="about-page-content mb-100 mb-sm-45">
-    <div class="container wide">
-        
-        <div class="row">
-
-            <div class="col-lg-6 mb-md-50 mb-sm-50">
-                <!--=======  about page 2 image  =======-->
-                
-                <div class="about-page-2-image">
-                    <img src="{{asset('frontend/css/about-us/6.png')}}" class="img-fluid" alt="">
-                </div>
-                
-                <!--=======  End of about page 2 image  =======-->
-            </div>
-
-            <div class="offset-xl-1 col-xl-4 col-lg-6 col-md-6 mb-sm-50">
-
-                <div class="about-page-text">
-                    <p class=" mb-35">Kebutuhan sepatu sneakers berkualitas originals sudah tidak bisa dibendung lagi. Kualitas yang ditawarkan dari material bahan originals akan membuat sepatu-sepatu sneakers tersebut sangat nyaman digunakan dan dipakai untuk fashion harian. Para pecinta sneakers atau sneakers head selalu ingin terus menerus melengkapi koleksi sepatu mereka. Memiliki sepatu sneakers limited edition bisa membuat mereka sangat senang dan didewakan oleh kolektor sepatu lainnya. Untuk memenuhi kebutuhan para kolektor dan sneakerhead yang mengidamkan koleksi sepatu sneakers terbaik, SIKIL pun hadir. SIKIL adalah toko online yang menjual sepatu sneakers originals yang menjual beragam sneakers edisi khusus atau edisi terbatas, dari beragam ship sneaker ternama dunia seperti Nike, Adidas, Puma. Jadi, jika sedang mencari dan ingin membeli sepatu sneakers originals, kunjungi saja website toko online SIKIL. Temukan sneakers shoes idaman secara online Anda di sana dengan harga terbaik, produk sepatu originals pilihan. SIKIL akan segera mengirimkan barang tersebut secepatnya setelah Anda menyelesaikan pembayaran dan mengonfirmasikannya. Selain menjual sepatu sneakers originals secara online, toko online ini juga menjual pakaian originals dengan banyak pilihan agar Anda bisa tampil stylish dan fashionable di saat bersamaan. SIKIL juga menjual beragam aksesoris originals dari ship Andrrows, Relace, Umbre dan lainnya. Semua produk originals dari sepatu sneakers, originals fashion dan aksesoris tersebut tersedia untuk pria, wanita dan anak-anak. Toko online sepatu sneakers originals yang cocok untuk melengkapi koleksi sepatu sneakers dan beragam kebutuhan pakaian originals anda hanya di SIKIL.</p>
-                </div>
-
-                <div class="lezada-widget lezada-widget--about mb-35">
-                    <h2 class="widget-title mb-25">ADDRESS</h2>
-                    <p class="widget-content">Jl. Inpres No. 13&14 Kav.27A, Kedoya Utara - Kebon Jeruk, Kota Jakarta Barat, DKI Jakarta 11520
-
-                    </p>
-                </div>
-
-                <div class="lezada-widget lezada-widget--about mb-35">
-                    <h2 class="widget-title mb-25">PHONE</h2>
-                    <p class="widget-content">Mobile: (+88) – 1990</p>
-                    <p class="widget-content">Hotline: 1800 – 1102</p>
-                </div>
-
-                <div class="lezada-widget lezada-widget--about">
-                    <h2 class="widget-title mb-25">EMAIL</h2>
-                    <p class="widget-content">sikilteam@gmail.com</p>
-                </div>
-
-            </div>
-        </div>
+    <div class="qodef-title-wrapper" style="height: 520px">
+    <div class="qodef-title-inner">
+    <div class="qodef-grid">
+    <span class="qodef-page-subtitle">Amazing</span>
+    <h1 class="qodef-page-title entry-title">About Us</h1>
     </div>
-</div>
-
-<div class="lezada-testimonial multi-item-testimonial-area testimonial-bg testimonial-bg-1 mb-100 pt-135 pb-135">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mb-60">
-                <!--=======  section title  =======-->
-                
-                <div class="section-title section-title--one text-center">
-                    <h1>Meet Our Team</h1>
-                </div>
-                
-                <!--=======  End of section title  =======-->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <!--=======  testmonial slider container  =======-->
-                
-                <div class="lezada-slick-slider multi-testimonial-slider-container"
-                data-slick-setting='{
-                    "slidesToShow": 3,
-                    "arrows": true,
-                    "autoplay": false,
-                    "autoplaySpeed": 5000,
-                    "speed": 1000,
-                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ti-angle-left" },
-                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "ti-angle-right" }
-                }'
-                data-slick-responsive='[
-                    {"breakpoint":1501, "settings": {"slidesToShow": 3} },
-                    {"breakpoint":1199, "settings": {"slidesToShow": 3} },
-                    {"breakpoint":991, "settings": {"slidesToShow": 2, "arrows": false} },
-                    {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false} },
-                    {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false} },
-                    {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
-                ]'
-                >
-                    
-                    <!--=======  single testimonial  =======-->
-                    
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                “Be mindful. Be grateful. Be positive. Be true. Be kind.”
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/koji.jpg')}}" class="img-fluid" alt="">
-                                </div>
-
-                                <div class="content">
-                                    <p class="name">Putu Koji Singga</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--=======  End of single testimonial  =======-->
-
-                    <!--=======  single testimonial  =======-->
-                    
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/fakhri.jpg')}}" class="img-fluid" alt="">
-                                </div>
-
-                                <div class="content">
-                                    <p class="name">Fakhri Pratama</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--=======  End of single testimonial  =======-->
-                    
-                    <!--=======  single testimonial  =======-->
-                    
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                “Instead of worrying about what you cannot control, shift your energy to what you can create.”
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/fajri.jpg')}}" class="img-fluid" alt="">
-                                </div>
-                                
-                                <div class="content">
-                                    <p class="name">Fazri Oktaviansah</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                “It’s only after you’ve stepped outside your comfort zone that you begin to change, grow, and transform.”
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/peni.jpg')}}" class="img-fluid" alt="">
-                                </div>
-
-                                <div class="content">
-                                    <p class="name">Feny Dosmaida Pandjaitan</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                “Take responsibility of your own happiness, never put it in other people’s hands.”
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/nopi.png')}}" class="img-fluid" alt="">
-                                </div>
-
-                                <div class="content">
-                                    <p class="name">Novita Urdi Marpaung</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--=======  End of single testimonial  =======-->
-
-                    <!--=======  single testimonial  =======-->
-                    
-                    <div class="col">
-                        <div class="testimonial-item multi-testimonial-single-item">
-                            <div class="multi-testimonial-single-item__text">
-                                “Accept yourself, love yourself, and keep moving forward. If you want to fly, you have to give up what weighs you down.”
-                            </div>
-                            <div class="multi-testimonial-single-item__author-info">
-                                <div class="image">
-                                    <img src="{{asset('frontend/images/user/umay.jpg')}}" class="img-fluid" alt="">
-                                </div>
-
-                                <div class="content">
-                                    <p class="name">Aisyah Humairah</p>
-                                    <span class="designation"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--=======  End of single testimonial  =======-->
-
-                </div>
-                
-                <!--=======  End of testmonial slider container  =======-->
-            </div>
-        </div>
     </div>
-</div>
-<!-- jQuery JS -->
-<script src="{{asset('frontend/css/about-us/vendor/jquery.min.js')}}"></script>
-
-<!-- Popper JS -->
-<script src="{{asset('frontend/css/about-us/popper.min.js')}}"></script>
-
-<!-- Bootstrap JS -->
-<script src="{{asset('frontend/css/about-us/bootstrap.min.js')}}"></script>
-
-<!-- Plugins JS -->
-<script src="{{asset('frontend/css/about-us/plugins.js')}}"></script>
-
-<!-- Main JS -->
-<script src="{{asset('frontend/css/about-us/main.js')}}"></script>
-@stop
-
+    </div>
+    </div>
+    <div class="qodef-full-width">
+    <div class="qodef-full-width-inner">
+    <div class="qodef-grid-row">
+    <div class="qodef-page-content-holder qodef-grid-col-12">
+    <div class="qodef-row-grid-section-wrapper "><div class="qodef-row-grid-section"><div class="vc_row wpb_row vc_row-fluid vc_row-o-content-top vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-7 vc_col-md-offset-0 vc_col-md-10 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="qodef-elements-holder   qodef-one-column  qodef-responsive-mode-768 "><div class="qodef-eh-item    " data-item-class="qodef-eh-custom-4850" data-1367-1600="155px 0px 170px" data-1025-1366="155px 0px 170px" data-769-1024="155px 0px 80px" data-681-768="155px 0px 80px" data-680="161px 0px 80px">
+    <div class="qodef-eh-item-inner">
+    <div class="qodef-eh-item-content qodef-eh-custom-4850" style="padding: 155px 0 170px 0">
+    <div class="qodef-section-title-holder ">
+    <div class="qodef-st-inner">
+    <h2 class="qodef-st-title">
+    Our Popular Tours </h2>
+    <p class="qodef-st-text" style="font-size: 17px;line-height: 28px;margin-top: 15px">
+    Si elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. Tn eam dimo diam ea. Piber Korem sit amet. </p>
+    </div>
+    </div><div class="vc_empty_space" style="height: 13px"><span class="vc_empty_space_inner"></span></div>
+    <div class="wpb_text_column wpb_content_element ">
+    <div class="wpb_wrapper">
+    <p>Al elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. En eam dico similique, ut sint posse sit, eum sumo diam ea. Liber consectetuer in mei, sea in imperdiet assue verit contentio nes, an his cibo blandit tacimates. Iusto iudi cabit sim ilique id velex, in sea rebum deseruisse appellantur. Etiam rhoncus. Maec enas tempus, tellus eget condimentum rhoncus.Aliquam lorem ante, dapibus in, viverra quis, feugiat</p>
+    </div>
+    </div>
+    <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+    <a itemprop="url" href="../tours-search-page/index0ed7.html?view_type=gallery" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid">
+    <span class="qodef-btn-text">Read More</span>
+    </a> </div>
+    </div>
+    </div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-5 vc_col-md-offset-0 vc_col-md-10 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="qodef-elements-holder   qodef-one-column  qodef-responsive-mode-768 "><div class="qodef-eh-item    " data-item-class="qodef-eh-custom-7686" data-1367-1600="125px 0px 0 104px" data-1025-1366="125px 0px 0 23px" data-769-1024="0px 0px 170px 0px" data-681-768="0px 0px 170px 0px" data-680="0px 0px 170px 0px">
+    <div class="qodef-eh-item-inner">
+    <div class="qodef-eh-item-content qodef-eh-custom-7686" style="padding: 125px 0px 0 40px">
+    <div class="wpb_single_image wpb_content_element vc_align_left">
+    <figure class="wpb_wrapper vc_figure">
+    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="420" height="420" src="../wp-content/uploads/2018/09/about-us-img-1.png" class="vc_single_image-img attachment-full" alt="d" srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-1.png 420w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-1-150x150.png 150w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-1-300x300.png 300w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-1-100x100.png 100w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-1-75x75.png 75w" sizes="(max-width: 420px) 100vw, 420px" /></div>
+    </figure>
+    </div>
+    </div>
+    </div>
+    </div></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1539260876012 qodef-content-aligment-center"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="qodef-video-button-holder  qodef-vb-has-img ">
+    <div class="qodef-video-button-image">
+    <img width="1920" height="605" src="../wp-content/uploads/2018/09/about-us-parallax-img-1.jpg" class="attachment-full size-full" alt="d" srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-parallax-img-1.jpg 1920w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-parallax-img-1-300x95.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-parallax-img-1-768x242.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-parallax-img-1-1024x323.jpg 1024w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-parallax-img-1-600x189.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px" /> </div>
+    <a class="qodef-video-button-play-image " href="https://vimeo.com/65727879" data-rel="prettyPhoto[video_button_pretty_photo_328]">
+    <span class="qodef-video-button-play-inner">
+    <img width="69" height="69" src="../wp-content/uploads/2018/09/play-button.png" class="attachment-full size-full" alt="d" /> </span>
+    </a>
+    </div></div></div></div></div><div class="qodef-row-grid-section-wrapper "><div class="qodef-row-grid-section"><div class="vc_row wpb_row vc_row-fluid vc_row-o-content-top vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="qodef-elements-holder   qodef-two-columns  qodef-responsive-mode-1024 "><div class="qodef-eh-item  qodef-vertical-alignment-top  " data-item-class="qodef-eh-custom-4231" data-1367-1600="0px 67px 120px 137px" data-1025-1366="0px 0px 120px 32px" data-769-1024="0px 0px 65px 0px" data-681-768="0px 0px 65px 0px" data-680="0px 0px 72px 0px">
+    <div class="qodef-eh-item-inner">
+    <div class="qodef-eh-item-content qodef-eh-custom-4231" style="padding: 0px 128px 120px 128px">
+    <div class="wpb_single_image wpb_content_element vc_align_left">
+    <figure class="wpb_wrapper vc_figure">
+    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="397" height="461" src="../wp-content/uploads/2018/09/about-us-img-2.png" class="vc_single_image-img attachment-full" alt="d" srcset="https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-2.png 397w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-2-258x300.png 258w, https://setsail.select-themes.com/wp-content/uploads/2018/09/about-us-img-2-65x75.png 65w" sizes="(max-width: 397px) 100vw, 397px" /></div>
+    </figure>
+    </div>
+    </div>
+    </div>
+    </div><div class="qodef-eh-item  qodef-vertical-alignment-top  " data-item-class="qodef-eh-custom-7526" data-1367-1600="40px 0px 0px 0px" data-1025-1366="40px 0px 170px 8px" data-769-1024="0px 0px 120px 0px" data-681-768="0px 0px 120px 0px" data-680="0px 0px 120px 0px">
+    <div class="qodef-eh-item-inner">
+    <div class="qodef-eh-item-content qodef-eh-custom-7526" style="padding: 40px 0px 0px 8px">
+    <div class="qodef-section-title-holder ">
+    <div class="qodef-st-inner">
+    <h2 class="qodef-st-title">
+    Our Popular Tours </h2>
+    <p class="qodef-st-text" style="font-size: 17px;line-height: 28px;margin-top: 14px">
+    Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem </p>
+    </div>
+    </div><div class="vc_empty_space" style="height: 4px"><span class="vc_empty_space_inner"></span></div>
+    <div class="qodef-progress-bar  ">
+    <h6 class="qodef-pb-title-holder">
+    <span class="qodef-pb-title">Countryside</span>
+    <span class="qodef-pb-percent">0</span>
+    </h6>
+    <div class="qodef-pb-content-holder">
+    <div data-percentage=76 class="qodef-pb-content"></div>
+    </div>
+    </div><div class="qodef-progress-bar  ">
+    <h6 class="qodef-pb-title-holder">
+    <span class="qodef-pb-title">Vineyard</span>
+    <span class="qodef-pb-percent">0</span>
+    </h6>
+    <div class="qodef-pb-content-holder">
+    <div data-percentage=92 class="qodef-pb-content"></div>
+    </div>
+    </div><div class="qodef-progress-bar  ">
+    <h6 class="qodef-pb-title-holder">
+    <span class="qodef-pb-title">Wine Tasting</span>
+    <span class="qodef-pb-percent">0</span>
+    </h6>
+    <div class="qodef-pb-content-holder">
+    <div data-percentage=86 class="qodef-pb-content"></div>
+    </div>
+    </div> </div>
+    </div>
+    </div></div></div></div></div></div></div></div>
+    @stop

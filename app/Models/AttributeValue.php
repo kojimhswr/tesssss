@@ -36,8 +36,8 @@ class AttributeValue extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function productAttributes()
+    public function packageAttributes()
     {
-        return $this->belongsToMany(ProductAttribute::class);
+        return $this->belongsToMany(PackageAttribute::class);
     }
 }

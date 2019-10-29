@@ -56,7 +56,7 @@ class PayPalService
         foreach ($order->items as $item)
         {
             $orderItems[$item->id] = new Item();
-            $orderItems[$item->id]->setName($item->product->name)
+            $orderItems[$item->id]->setName($item->package->name)
                 ->setCurrency(config('settings.currency_code'))
                 ->setQuantity($item->quantity)
                 ->setPrice(sprintf('%0.2f', $item->price));

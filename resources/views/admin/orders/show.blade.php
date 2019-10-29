@@ -40,7 +40,7 @@
                                 <thead>
                                 <tr>
                                     <th>Qty</th>
-                                    <th>Product</th>
+                                    <th>Package</th>
                                     <th>SKU #</th>
                                     <th>Qty</th>
                                     <th>Subtotal</th>
@@ -50,8 +50,8 @@
                                     @foreach($order->items as $item)
                                         <tr>
                                             <td>{{ $item->id }}</td>
-                                            <td>{{ $item->product->name }}</td>
-                                            <td>{{ $item->product->sku }}</td>
+                                            <td>{{ $item->package->name }}</td>
+                                            <td>{{ $item->package->duration }}</td>
                                             <td>{{ $item->quantity }}</td>
                                             <td>{{ config('settings.currency_symbol') }}{{ round($item->price, 2) }}</td>
                                         </tr>
