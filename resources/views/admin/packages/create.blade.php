@@ -115,6 +115,22 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="destination">Destination </label>
+                                                <input
+                                                    class="form-control @error('destination') is-invalid @enderror"
+                                                    type="text"
+                                                    placeholder="Enter package destination"
+                                                    id="destination"
+                                                    name="destination"
+                                                    value="{{ old('destination') }}"
+                                                />
+                                                <div class="invalid-feedback active">
+                                                    <i class="fa fa-exclamation-circle fa-fw"></i> @error('destination') <span>{{ $message }}</span> @enderror
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                                 <br>
                                 <div class="row">

@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="control-label" for="regions">Regions</label>
                                             <select name="regions[]" id="regions" class="form-control" multiple>
@@ -126,6 +126,22 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="destination">Destination</label>
+                                                <input
+                                                    class="form-control @error('destination') is-invalid @enderror"
+                                                    type="text"
+                                                    placeholder="Enter package destination"
+                                                    id="destination"
+                                                    name="destination"
+                                                    value="{{ old('destination', $package->destination) }}"
+                                                />
+                                                <div class="invalid-feedback active">
+                                                    <i class="fa fa-exclamation-circle fa-fw"></i> @error('destination') <span>{{ $message }}</span> @enderror
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row">
                                     <legend class="text-bold">Cruise Plan        :

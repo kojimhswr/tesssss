@@ -20,6 +20,7 @@ class CreatePackagesTable extends Migration
             $table->date('start')->nullable();
             $table->date('end')->nullable();
             $table->string('name');
+            $table->string('destination');
             $table->text('included')->nullable();
             $table->text('not_included')->nullable();
             $table->string('slug');

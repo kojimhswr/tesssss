@@ -26,6 +26,10 @@
 <link rel='stylesheet' id='js_composer_front-css' href='{{asset('frontend/assets/css/js_composer.min.css')}}' type='text/css' media='all' />
 <link rel='stylesheet' href='{{asset('frontend/assets/css/slick.css')}}' type='text/css' media='all' />
 <link rel='stylesheet' href='{{asset('frontend/assets/css/slick-theme.css')}}' type='text/css' media='all' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+
+<link rel='stylesheet' id='setsail-select-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%2C800%7CCatamaran%3A300%2C400%2C500%2C600%2C700%2C800%7CSatisfy%3A300%2C400%2C500%2C600%2C700%2C800&amp;subset=latin-ext&amp;ver=1.0.0' type='text/css' media='all' />
+
 
 
 <style id='js_composer_front-inline-css' type='text/css'>

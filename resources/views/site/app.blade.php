@@ -6,7 +6,7 @@
     <title>@yield('title') - {{ config('app.name') }}</title>
     @include('site.partials.styles')
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -16,11 +16,14 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
+    </script> --}}
     
     <!--End of Tawk.to Script-->
 </head>
 <body class="ps-loading">
+        <a id='qodef-back-to-top' href='#'>
+                <span class="qodef-btt-text">TOP</span>
+                </a>
 @include('site.partials.header')
 @yield('content')
 @include('site.partials.footer')

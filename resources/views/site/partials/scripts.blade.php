@@ -1,8 +1,15 @@
 <script type="text/javascript" src="{{asset('frontend/assets/js/jquery/jquery.js')}}"></script>
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/jquery/jquery-migrate.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/jquery.appear.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/modernizr.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/jquery.plugin.js')}}"></script>
+<script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/owl.carousel.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/jquery.waypoints.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/modules/plugins/fluidvids.min.js')}}"></script>
@@ -45,6 +52,7 @@
 <script type='text/javascript' src='{{asset('frontend/shortcodes/vertical-split-slider/assets/js/plugins/jquery.multiscroll.min.js')}}'></script>
 <script type='text/javascript' src='{{asset('frontend/assets/js/js_composer_front.min.js')}}'></script>
 <script type="text/javascript" src="{{asset('frontend/assets/js/slick.js')}}"></script>
+
 <script>
 $('.slide-responsive').slick({
   infinite: true,

@@ -16,7 +16,7 @@ class Package extends Model
      * @var array
      */
     protected $fillable = [
-        'ship_id','name', 'start', 'end','slug', 'description', 'included', 'not_included', 'duration',
+        'ship_id','name', 'start', 'end','slug','destination', 'description', 'included', 'not_included', 'duration',
          'price', 'sale_price', 'status', 'featured',
     ];
 
