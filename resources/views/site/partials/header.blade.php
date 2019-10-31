@@ -133,45 +133,7 @@
                 </div>
                 <div class="qodef-position-right">
                     <div class="qodef-position-right-inner">
-                        <div class="qodef-shopping-cart-holder" style="margin: 0 20px 0 0">
-                            <div class="qodef-shopping-cart-inner">
-                                <a itemprop="url" class="qodef-header-cart qodef-header-cart-svg-path"
-                                    href="cart/index.html">
-                                    <span class="qodef-cart-icon"><svg version="1.1" x="0px" y="0px" width="20"
-                                            viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
-                                            <g>
-                                                <path stroke-width="0.3" stroke-miterlimit="10" d="M3.9,8.9H1.4c-0.7,0-1.2-0.5-1.2-1.2V6.8
-                c0-0.7,0.5-1.2,1.2-1.2h2.9v0.8H1.4C1.2,6.4,1,6.6,1,6.8v0.8c0,0.2,0.2,0.4,0.4,0.4h2.4V8.9z" />
-                                            </g>
-                                            <g>
-                                                <rect x="6.7" y="5.6" stroke-width="0.3" stroke-miterlimit="10" width="6.5"
-                                                    height="0.8" />
-                                            </g>
-                                            <g>
-                                                <rect x="2" y="8.1" stroke-width="0.3" stroke-miterlimit="10" width="15.1"
-                                                    height="0.8" />
-                                            </g>
-                                            <g>
-                                                <path stroke-width="0.3" stroke-miterlimit="10" d="M18.6,8.9h-2.4V8.1h2.4c0.2,0,0.4-0.2,0.4-0.4V6.8
-                c0-0.2-0.2-0.4-0.4-0.4h-2.9V5.6h2.9c0.7,0,1.2,0.5,1.2,1.2v0.8C19.8,8.3,19.2,8.9,18.6,8.9z" />
-                                            </g>
-                                            <g>
-                                                <path stroke-width="0.3" stroke-miterlimit="10"
-                                                    d="M15.5,16.2H4.5c-0.8,0-1.4-0.5-1.6-1.3L1.4,8.6l0.8-0.2
-                l1.4,6.4c0.1,0.4,0.4,0.6,0.8,0.6h11.1c0.4,0,0.7-0.3,0.8-0.6l1.4-6.4l0.8,0.2l-1.4,6.4C17,15.7,16.3,16.2,15.5,16.2z" />
-                                            </g>
-                                            <g>
-                                                <path stroke-width="0.3" stroke-miterlimit="10" d="M5.1,7.7c-0.1,0-0.1,0-0.2,0C4.7,7.5,4.6,7.3,4.7,7.1L7.2,1
-                c0.1-0.2,0.3-0.3,0.5-0.2C7.9,0.8,8,1.1,7.9,1.3L5.5,7.4C5.4,7.6,5.3,7.7,5.1,7.7z" />
-                                            </g>
-                                            <g>
-                                                <path stroke-width="0.3" stroke-miterlimit="10" d="M14.9,7.7c-0.2,0-0.3-0.1-0.4-0.3l-2.4-6.1
-                c-0.1-0.2,0-0.4,0.2-0.5c0.2-0.1,0.4,0,0.5,0.2l2.4,6.1c0.1,0.2,0,0.4-0.2,0.5C15,7.6,14.9,7.7,14.9,7.7z" />
-                                            </g>
-                                        </svg></span>
-                                </a>
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
             </div>

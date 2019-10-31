@@ -34,6 +34,10 @@ class ViewComposerServiceProvider extends ServiceProvider
         View::composer('site.pages.homepage', function ($view) {
             $view->with('packages', Package::orderByRaw('-name ASC')->get());
         });
+
+        View::composer('site.pages.homepage', function ($view) {
+            $view->with('regionfeat', Region::orderByRaw('-name ASC')->get());
+        });
     }
 
 }

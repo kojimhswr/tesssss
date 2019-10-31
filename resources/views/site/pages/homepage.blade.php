@@ -91,6 +91,8 @@
                                                                 <div
                                                                     class="qodef-tours-destination-holder qodef-destination-standard qodef-grid-list qodef-disable-bottom-space qodef-three-columns qodef-extra-large-space qodef-has-rounded-style qodef-has-overlay-style">
                                                                     <div class="qodef-td-inner qodef-outer-space">
+                                                                        @foreach($regionfeat as $regf)
+                                                                        @if($regf->id != 1)
                                                                         <div class="qodef-td-item qodef-item-space">
                                                                             <div class="qodef-tdi-content">
                                                                                 <div class="qodef-tdi-image">
@@ -98,59 +100,21 @@
                                                                                         src="wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg"
                                                                                         class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
                                                                                         alt="d"
-                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-4.jpg 800w"
-                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
+                                                                                        srcset="{{'storage/'.$regf->image}} 650w, {{'storage/'.$regf->image}} 150w, {{'storage/'.$regf->image}} 300w, {{'storage/'.$regf->image}} 768w, {{'storage/'.$regf->image}} 600w, {{'storage/'.$regf->image}} 100w, {{'storage/'.$regf->image}} 800w"
+                                                                                        sizes="(max-width: 900px) 100vw, 650px" />
                                                                                 </div>
                                                                                 <a class="qodef-tdi-content-link"
-                                                                                    href="destinations/holland/index.html"></a>
+                                                                                    href="{{ route('region.show', $regf->slug) }}"></a>
                                                                                 <div class="qodef-tdi-text">
                                                                                     <div class="qodef-tdi-text-inner">
                                                                                         <h3 class="qodef-tdi-title">
-                                                                                            Holland</h3>
+                                                                                            {{$regf->name}}</h3>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="qodef-td-item qodef-item-space">
-                                                                            <div class="qodef-tdi-content">
-                                                                                <div class="qodef-tdi-image">
-                                                                                    <img width="650" height="650"
-                                                                                        src="wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg"
-                                                                                        class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
-                                                                                        alt="d"
-                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-5.jpg 800w"
-                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
-                                                                                </div>
-                                                                                <a class="qodef-tdi-content-link"
-                                                                                    href="destinations/greece/index.html"></a>
-                                                                                <div class="qodef-tdi-text">
-                                                                                    <div class="qodef-tdi-text-inner">
-                                                                                        <h3 class="qodef-tdi-title">
-                                                                                            Greece</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="qodef-td-item qodef-item-space">
-                                                                            <div class="qodef-tdi-content">
-                                                                                <div class="qodef-tdi-image">
-                                                                                    <img width="650" height="650"
-                                                                                        src="wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg"
-                                                                                        class="attachment-setsail_select_image_square size-setsail_select_image_square wp-post-image"
-                                                                                        alt="d"
-                                                                                        srcset="https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg 650w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-150x150.jpg 150w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-300x300.jpg 300w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-768x768.jpg 768w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-600x600.jpg 600w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6-100x100.jpg 100w, https://setsail.select-themes.com/wp-content/uploads/2018/10/destinations-featured-img-6.jpg 800w"
-                                                                                        sizes="(max-width: 650px) 100vw, 650px" />
-                                                                                </div>
-                                                                                <a class="qodef-tdi-content-link"
-                                                                                    href="destinations/italy/index.html"></a>
-                                                                                <div class="qodef-tdi-text">
-                                                                                    <div class="qodef-tdi-text-inner">
-                                                                                        <h3 class="qodef-tdi-title">
-                                                                                            Italy</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                        @endif
+                                                                        @endforeach
                                                                     </div>
                                                                 </div>
                                                             </div>
