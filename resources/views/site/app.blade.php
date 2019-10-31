@@ -20,10 +20,10 @@
     
     <!--End of Tawk.to Script-->
 </head>
-<body class="ps-loading">
-        <a id='qodef-back-to-top' href='#'>
+<body>
+        {{-- <a id='qodef-back-to-top' href='#'>
                 <span class="qodef-btt-text">TOP</span>
-                </a>
+                </a> --}}
 @include('site.partials.header')
 @yield('content')
 @include('site.partials.footer')

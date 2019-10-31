@@ -12,10 +12,17 @@ class AttributesTableSeeder extends Seeder
      */
     public function run()
     {
-        // Create a size attribute
         Attribute::create([
             'code'          =>  'room',
             'name'          =>  'Room',
+            'frontend_type' =>  'select',
+            'is_filterable' =>  1,
+            'is_required'   =>  1,
+        ]);
+
+        Attribute::create([
+            'code'          =>  'meal',
+            'name'          =>  'Meal Set',
             'frontend_type' =>  'select',
             'is_filterable' =>  1,
             'is_required'   =>  1,
