@@ -103,7 +103,7 @@ class PackageRepository extends BaseRepository implements PackageContract
      */
     public function findPackageBySlug($slug)
     {
-        $package = Package::where('slug', $slug)->first();
+        $package = Package::where('slug', $slug)->with('images')->first();
         return $package;
     }
 }

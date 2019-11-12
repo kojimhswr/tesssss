@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Package;
+use App\Models\Region;
 use App\Contracts\PackageContract;
 use App\Contracts\AttributeContract;
 use App\Contracts\RegionContract;
@@ -44,9 +45,9 @@ class PackageController extends Controller
 
     
     public function index(){
-    $package = Package::all();
+    $region = Region::all()->except(1);
 
-    return response()->json(['pesan'=>'berhasil', 'package'=>$package]);
+    return response()->json(['pesan'=>'berhasil', 'region'=>$region]);
     }
 
    

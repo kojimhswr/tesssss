@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('package/search/', 'API\PackageController@index');
-Route::get('package/{slug}', 'API\PackageController@show');
+Route::get('package/{slug}', 'API\PackageController@showPackage');
 Route::get('region/{slug}', 'API\PackageController@showRegion');
 
 

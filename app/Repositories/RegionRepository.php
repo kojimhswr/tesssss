@@ -147,7 +147,7 @@ class RegionRepository extends BaseRepository implements RegionContract
 
     public function findBySlug($slug)
     {
-        return Region::with('packages')
+        return Region::with('packages')->with('packages.images')
             ->where('slug', $slug)
             ->where('menu', 1)
             ->first();
