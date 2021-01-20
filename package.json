@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "@dogstudio/highway": "^2.1.3",
-        "gsap": "^2.1.3",
+        "gsap": "^3.6.0",
         "owl.carousel": "^2.3.4",
         "packery": "^2.1.2",
         "vue-swal": "^0.1.0"
